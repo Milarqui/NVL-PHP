@@ -1,3 +1,4 @@
+<?php
 function copia_diaria($file)
 {
   date_default_timezone_set("Europe/Madrid");
@@ -6,3 +7,4 @@ function copia_diaria($file)
   $nuevofile = "./$nuevodir/$file.modificado";
   copy($file,$nuevofile);
 }
+?>
