@@ -1,3 +1,4 @@
+<?php
 function reemplazar($read,$write,$word1,$word2)
 {
   $fIn = fopen($read,"r"); \\Abre el archivo a leer
@@ -16,3 +17,4 @@ $routeOut = "quijote_morty.txt";
 $wordIn = "Sancho";
 $wordOut = "Morty";
 reemplazar($routeIn,$routeOut,$wordIn,$wordOut);
+?>
