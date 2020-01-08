@@ -1,3 +1,4 @@
+<?php
 function vocales($Frase) {
   $vals = ["a","e","i","o","u"];
   $esta = [False,False,False,False,False];
@@ -20,3 +21,4 @@ function vocales($Frase) {
 
 $P = "Hoy es un nuevo dia";
 echo vocales($P);
+?>
