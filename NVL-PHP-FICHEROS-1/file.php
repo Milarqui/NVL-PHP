@@ -1,3 +1,4 @@
+<?php
 function palabras($file,$word)
 {
   $num = 0; //Se inicia el contador
@@ -17,3 +18,4 @@ $quijote = fopen("https://gist.githubusercontent.com/jsdario/6d6c69398cb0c73111e
 $palabra = "molino";
 
 echo palabras($quijote,$palabra);
+?>
