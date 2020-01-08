@@ -1,3 +1,4 @@
+<?php
 function cuentaLetras($palabra, $letra)
 {
   $n = 0;
@@ -13,3 +14,4 @@ function cuentaLetras($palabra, $letra)
   }
   return $n;
 }
+?>
