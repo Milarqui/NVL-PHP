@@ -1,21 +1,23 @@
 <?php
 function vocales($Frase) {
   $vals = ["a","e","i","o","u"];
-  $esta = [False,False,False,False,False];
+  $esta = True;
   $frase = strtolower($Frase);
   $l = strlen($frase);
   for($i = 0; $i < 5; $i++)
   {
-    if(strpos($frase,$vals[$i]) !== False)
+    if(substr_count($frase,$vals[$i]) == 0)
     {
-      $esta[$i] = True;
+      $esta = False;
+      break;
     }
   }
-  if(in_array(False, $esta)){
-      return "NO CONTIENE TODAS LAS VOCALES";
+  if($esta){
+    return "LA PALABRA CONTIENE LAS 5 VOCALES";
+      
   }
   else {
-     return "LA PALABRA CONTIENE LAS 5 VOCALES";
+    return "NO CONTIENE TODAS LAS VOCALES";
   }
 }
 
